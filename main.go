@@ -7,19 +7,19 @@ import (
 
 func main() {
 	/**
-	@todo I am Ümit UZ and awesome!
-	 */
+	@todo I am Ümit UZ and awesome! :D
+	*/
 	fmt.Println("Hello World Via GoLang")
 	/*
-	@todo math kütüphanesinden Pi fonksyionu çağırma işlemi gerçekleştirilir ve ekrana yazar
-	 */
+		@todo math kütüphanesinden Pi fonksyionu çağırma işlemi gerçekleştirilir ve ekrana yazar
+	*/
 	fmt.Println(math.Pi)
 
 	/**
 	@todo fmt.Println iki değer döndürür. Biri int diğeri error.
 	* integer olan bite sayısıdır
 	* error da <nil> olarak döner, yani nothing anlamındadır
-	 */
+	*/
 	message, error := fmt.Println("Hi There")
 	fmt.Println(message)
 	fmt.Println(error)
