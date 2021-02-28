@@ -31,4 +31,15 @@ func main() {
 	*/
 	x, _ := fmt.Println("Hello")
 	fmt.Println(x)
+
+	/**
+	* Değişken tanımlamak için var anahtar kelimesi kullanılır.
+	 */
+	var language = "Go Lang"
+	fmt.Println(language)
+	var name, surname = "Ümit", "UZ"
+	fmt.Println(name, surname)
+	var dream string
+	dream = "Change The World"
+	fmt.Println(dream)
 }
