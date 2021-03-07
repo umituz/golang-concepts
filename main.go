@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"time"
+)
+
 func main() {
 	/**
 	@todo I am Ümit UZ and awesome! :D
@@ -74,4 +79,14 @@ func main() {
 	//red = red + 1 // 0
 
 	//fmt.Println(red)
+
+	/*
+	* Time
+	 */
+	now := time.Now()
+	var unix int64 = 1576603215
+	unixTime := time.Unix(unix, 0)
+	fmt.Println(now)
+	fmt.Println(unixTime)
+
 }
