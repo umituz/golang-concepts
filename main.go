@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -83,10 +82,24 @@ func main() {
 	/*
 	* Time
 	 */
-	now := time.Now()
-	var unix int64 = 1576603215
-	unixTime := time.Unix(unix, 0)
-	fmt.Println(now)
-	fmt.Println(unixTime)
+	//now := time.Now()
+	//var unix int64 = 1576603215
+	//unixTime := time.Unix(unix, 0)
+	//fmt.Println(now)
+	//fmt.Println(unixTime)
+
+	//name := "Umit UZ"
+	//fmt.Printf("%c", name[0])
+
+	/**
+	* \n ile alt satıra geçer
+	* etkisiz hale getirmek için \\ 2 tane slash koyulabilir
+	* backticks ile de yapılabilir `` alt noktalı virgül işareti ile
+	 */
+	variableName := "hey \\n yo"
+	variableName2 := `\n naber`
+	//variableName2[2] = "b" // error cannot assign to variableName[2]
+	// len() fonksiyonu string karakter sayısını verir.
+	fmt.Println(variableName2, len(variableName))
 
 }
