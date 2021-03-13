@@ -96,10 +96,18 @@ func main() {
 	* etkisiz hale getirmek için \\ 2 tane slash koyulabilir
 	* backticks ile de yapılabilir `` alt noktalı virgül işareti ile
 	 */
-	variableName := "hey \\n yo"
-	variableName2 := `\n naber`
+	//variableName := "hey \\n yo"
+	//variableName2 := `\n naber`
 	//variableName2[2] = "b" // error cannot assign to variableName[2]
 	// len() fonksiyonu string karakter sayısını verir.
-	fmt.Println(variableName2, len(variableName))
+	//fmt.Println(variableName2, len(variableName))
+
+	/**
+	* Caesar Cipher | Way to encrypt
+	 */
+	name := "umituz"
+	for i := 0; i < len(name); i++ {
+		fmt.Printf("%c", name[i]+5)
+	}
 
 }
