@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+// 	"strconv"
 )
 
 func main() {
@@ -105,9 +106,26 @@ func main() {
 	/**
 	* Caesar Cipher | Way to encrypt
 	 */
-	name := "umituz"
-	for i := 0; i < len(name); i++ {
-		fmt.Printf("%c", name[i]+5)
-	}
+// 	name := "umituz"
+// 	for i := 0; i < len(name); i++ {
+// 		fmt.Printf("%c", name[i]+5)
+// 	}
+
+    /**
+    * tip dönüşümleri için strconv paketi kullanılır.
+    */
+// @link https://golang.org/pkg/strconv/
+//     price := "Price of the pen is : " + strconv.FormatFloat(1.02,'f',2,64) + " dollars"
+// float bir sayıyı normal değişken olmayan bir sayıyla bölebiliriz am a değişkene atadığımızda tipini integer olarak ayarlar
+// örnek 30.32 / 12 doğru çalışırken 12 yi değişkene atadığında aynu işlemi çalıştırdığında hata verir çünkü float integer bölüm işlemi olamz
+//
+     numberOfPens := 12
+     price := 30.32
+     //priceOfOnePen := int(price) / numberOfPens
+     priceOfOnePen := price / float64(numberOfPens)
+     fmt.Println(price)
+     fmt.Printf("%T",price)
+     fmt.Println()
+     fmt.Println(priceOfOnePen)
 
 }
