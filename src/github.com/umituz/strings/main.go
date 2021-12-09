@@ -3,14 +3,51 @@ package main
 import (
 	"fmt"
 	"strings"
+	"strconv"
 )
 
 func main() {
 	//Samples()
 
-	Slice()
+	//Slice()
+
+	ConvertToDataTypes()
 
 }
+
+func ConvertToDataTypes() {
+
+	data := []byte("Ümit Kenan UZ")
+
+	fmt.Println(data)
+
+	var number int64 = 12345678910
+	str := strconv.FormatInt(number,10)
+	fmt.Println("No : " + str)
+
+	x := 65
+	s := string(x)
+	fmt.Println(s)
+
+	var variable string = "bu bir string"
+	fmt.Println(variable)
+
+	var b []byte
+	b = []byte(variable)
+	fmt.Println(b)
+
+	for x := range b {
+
+		fmt.Println(string(b[x]))
+
+	}
+
+	variable = string(b)
+	fmt.Println(variable)
+
+
+}
+
 
 func Slice() {
 	message := "Hello World"
