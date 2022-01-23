@@ -11,7 +11,7 @@ func main() {
 	//names["Kenan"] = "kenan@gmail.com"
 	//names["Umut"] = "umut@gmail.com"
 
-	names := map[string]string{"umit":"umit@gmail.com","Kenan":"kenan@gmail.com","umut":"umut@gmail.com"}
+	names := map[string]string{"umit": "umit@gmail.com", "Kenan": "kenan@gmail.com", "umut": "umut@gmail.com"}
 
 	fmt.Println(names)
 	fmt.Println(len(names))
@@ -19,7 +19,7 @@ func main() {
 
 	names["King"] = "king@gmail.com"
 
-	delete(names,"umut")
+	delete(names, "umut")
 
 	fmt.Println(names)
 

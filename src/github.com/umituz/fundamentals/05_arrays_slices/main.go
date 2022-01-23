@@ -16,12 +16,12 @@ func main() {
 	fmt.Println(carArr[0])
 	fmt.Println(carArr[1])
 
-	fruitSlice := []string{"Apple", "Orange", "Grape","Cherry"}
+	fruitSlice := []string{"Apple", "Orange", "Grape", "Cherry"}
 	fmt.Println(fruitSlice)
 	fmt.Println(fruitSlice[0])
 	fmt.Println(fruitSlice[1])
 	fmt.Println(fruitSlice[2])
-	
+
 	fmt.Println(len(fruitSlice))
 	fmt.Println(fruitSlice[1:3])
 

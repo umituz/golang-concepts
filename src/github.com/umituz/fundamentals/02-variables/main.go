@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	// MAIN TYPES
 	// string
@@ -20,30 +20,30 @@ func main(){
 	var name = "Ümit Kenan"
 
 	fmt.Println(name)
-	fmt.Printf("%T\n",name)
+	fmt.Printf("%T\n", name)
 
 	//var age int32 = 25
 	var age = 25
 
 	fmt.Println(age)
-	fmt.Printf("%T\n",age)
+	fmt.Printf("%T\n", age)
 
 	const isCool = true
 	fmt.Println(isCool)
-	fmt.Printf("%T\n",isCool)
+	fmt.Printf("%T\n", isCool)
 
 	var size float32 = 2.3
 	fmt.Println(size)
-	fmt.Printf("%T\n",size)
+	fmt.Printf("%T\n", size)
 
 	// Shorthand
 	fullName := "Ümit Kenan UZ"
 	email := "umitkenanuz@gmail.com"
-	fmt.Println(fullName,email)
-	fmt.Printf("%T\n",fullName)
-	fmt.Printf("%T\n",email)
+	fmt.Println(fullName, email)
+	fmt.Printf("%T\n", fullName)
+	fmt.Printf("%T\n", email)
 
 	fullName2, email2 := "Ümit Kenan UZ", "umitkenanuz@gmail.com"
-	fmt.Println(fullName2,email2)
+	fmt.Println(fullName2, email2)
 
 }
