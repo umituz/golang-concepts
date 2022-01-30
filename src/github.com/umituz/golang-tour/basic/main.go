@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"math"
-	"math/rand"
 	"math/cmplx"
+	"math/rand"
 )
 
 const Pi = 3.14
@@ -55,7 +55,7 @@ func add2(x, y int) int {
 }
 
 func swap(x, y string) (string, string) {
-	return x,y
+	return x, y
 }
 
 func split(sum int) (x, y int) {
