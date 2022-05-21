@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func ConvertToDataTypes() {
 	fmt.Println(data)
 
 	var number int64 = 12345678910
-	str := strconv.FormatInt(number,10)
+	str := strconv.FormatInt(number, 10)
 	fmt.Println("No : " + str)
 
 	x := 65
@@ -45,9 +45,7 @@ func ConvertToDataTypes() {
 	variable = string(b)
 	fmt.Println(variable)
 
-
 }
-
 
 func Slice() {
 	message := "Hello World"
@@ -60,7 +58,7 @@ func Slice() {
 	fmt.Println("ASCII Substring : ", subString2)
 
 	subString3 := message[1:len(subString2)]
-	fmt.Println("Sub string3 :",subString3)
+	fmt.Println("Sub string3 :", subString3)
 }
 
 func Samples() {
