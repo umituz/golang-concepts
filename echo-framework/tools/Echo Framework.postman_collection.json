@@ -7,12 +7,9 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
+			"name": "Add New User",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -24,15 +21,16 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8080/users/add",
+					"raw": "127.0.0.1:8000/api/users/add",
 					"host": [
 						"127",
 						"0",
 						"0",
 						"1"
 					],
-					"port": "8080",
+					"port": "8000",
 					"path": [
+						"api",
 						"users",
 						"add"
 					]
