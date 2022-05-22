@@ -1,8 +1,10 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/labstack/echo/v4"
+	"io/ioutil"
 	"net/http"
 )
 
@@ -31,12 +33,38 @@ func userHandler(c echo.Context) error {
 	return c.String(http.StatusBadRequest, "Data type only should be json or string")
 }
 
+type User struct {
+	Username string `json:"username"`
+	Name     string `json:"name"`
+	Surname  string `json:"surname"`
+}
+
+func userAddHandler(c echo.Context) error {
+	user := User{}
+
+	body, err := ioutil.ReadAll(c.Request().Body)
+
+	if err != nil {
+		return err
+	}
+
+	err = json.Unmarshal(body, &user)
+
+	if err != nil {
+		return err
+	}
+
+	fmt.Println(user)
+	return c.JSON(http.StatusOK, user)
+}
+
 func main() {
 
 	e := echo.New()
 
 	e.GET("/", homeHandler)
 	e.GET("/users/:dataType", userHandler)
+	e.POST("/users/add", userAddHandler)
 
 	e.Start(":8000")
 
