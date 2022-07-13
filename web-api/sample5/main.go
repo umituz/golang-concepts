@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-var homepage = "index.html"
+var homepage = "web-api/sample5/index.html"
 
 func loadFile(fileName string) (string, error) {
 	bytes, err := ioutil.ReadFile(fileName)

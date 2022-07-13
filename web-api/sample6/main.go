@@ -29,7 +29,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		PageDescription: "But you can try xD",
 		Content:         builder.String(),
 		URI:             "http://" + uri}
-	t, _ := template.ParseFiles("page.html")
+	t, _ := template.ParseFiles("web-api/sample6/page.html")
 
 	t.Execute(w, page)
 }
