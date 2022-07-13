@@ -21,6 +21,7 @@ func loadFile(fileName string) (string, error) {
 func handler(w http.ResponseWriter, r *http.Request) {
 	var body, _ = loadFile(homepage)
 	fmt.Fprintf(w, body)
+	//http.ServeFile(w,r,body)
 }
 
 func main() {
